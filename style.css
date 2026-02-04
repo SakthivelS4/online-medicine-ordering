@@ -1,0 +1,226 @@
+/* ===============================
+   GLOBAL STYLES
+================================ */
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(120deg, #e3f2fd, #e8f5e9);
+    color: #333;
+}
+
+/* ===============================
+   HEADER / NAVBAR
+================================ */
+header {
+    background: linear-gradient(90deg, #0277bd, #26a69a);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   CENTERED PAGES (login, signup, prescription, payment)
+================================ */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===============================
+   CARD / BOX
+================================ */
+.box {
+    background: white;
+    width: 340px;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    color: #0277bd;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================ */
+.box input {
+    width: 92%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+.box input:focus {
+    border-color: #26a69a;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+    background: linear-gradient(90deg, #0277bd, #26a69a);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===============================
+   LINKS
+================================ */
+a {
+    color: #0277bd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   SEARCH BAR (HOME)
+================================ */
+.search {
+    width: 60%;
+    margin: 25px auto;
+    display: block;
+    padding: 14px;
+    border-radius: 30px;
+    border: 1px solid #bbb;
+    font-size: 15px;
+}
+
+/* ===============================
+   MEDICINE GRID
+================================ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+/* ===============================
+   MEDICINE CARD
+================================ */
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #0277bd;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   CART & ORDERS LIST
+================================ */
+ul {
+    list-style: none;
+    padding: 25px;
+    max-width: 600px;
+    margin: auto;
+}
+
+li {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    font-size: 15px;
+}
+
+/* ===============================
+   TOTAL PRICE
+================================ */
+#total {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #0277bd;
+}
+
+/* ===============================
+   PRESCRIPTION PAGE
+================================ */
+.box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.box input[type="file"] {
+    border: none;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 600px) {
+    .search {
+        width: 90%;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+}

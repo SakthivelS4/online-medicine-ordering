@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediCare+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>💊 MediCare+</h2>
+    <nav>
+        <a href="cart.html">Cart</a>
+        <a href="orders.html">Orders</a>
+        <a href="prescription.html">Prescription</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<input class="search" id="searchBox" onkeyup="searchMedicine()" placeholder="Search medicines...">
+
+<div class="grid">
+    <div class="card">
+        <h3>Paracetamol</h3>
+        <p>₹50</p>
+        <button onclick="addToCart('Paracetamol',50)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Vitamin C</h3>
+        <p>₹80</p>
+        <button onclick="addToCart('Vitamin C',80)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Cough Syrup</h3>
+        <p>₹100</p>
+        <button onclick="addToCart('Cough Syrup',100)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>Amoxicillin</h3>
+        <p>₹120</p>
+        <button onclick="addToCart('Amoxicillin',120)">Add to Cart</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
